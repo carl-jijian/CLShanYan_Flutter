@@ -242,7 +242,7 @@ public class ShanyanPlugin implements FlutterPlugin, MethodCallHandler {
                 map.put(shanyan_type, i);
                 map.put(shanyan_code, i1);
                 map.put(shanyan_message, s);
-                Log.e(TAG, "map=" + map.toString());
+                // Log.e(TAG, "map=" + map.toString());
                 channel.invokeMethod("onReceiveAuthEvent", map);
             }
         });
